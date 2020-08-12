@@ -1,0 +1,134 @@
+/* normalize */
+body {
+  margin: 0;
+}
+input {
+  outline: 0;
+}
+button {
+  outline: 0;
+  cursor: pointer;
+}
+
+/* global styles */
+.container {
+  margin: 0 auto;
+  width: 1440px;
+}
+
+video {
+  background-color: black;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  background-color: orange;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(235, 152, 0);
+
+  .heading {
+    height: 32px;
+    font-size: 26px;
+    text-align: left;
+    padding-left: 14px;
+    padding-top: 2px;
+    margin: 0;
+    color: white;
+    font-family: "Rubik", sans-serif;
+  }
+  .inroom {
+    width: 320px;
+    margin-right: 20px;
+    padding-top: 4px;
+
+    input {
+      font-size: 14px;
+      width: 200px;
+      height: 20px;
+      background-color: orange;
+      border: 1px solid white;
+      color: gray;
+    }
+    button {
+      height: 26px;
+      color: gray;
+      font-size: 14px;
+      background-color: orange;
+      border: 1px solid white;
+      border-radius: 6px;
+      padding-top: 2px;
+    }
+  }
+}
+
+.room {
+  .wrapper {
+    display: flex;
+
+    .remote-streams {
+      width: 90%;
+      // height: 675px;
+      height: 787px;
+      margin: 0;
+      background-color: black;
+      position: relative;
+
+      video {
+        width: 100%;
+        height: 100%;
+      }
+      video:nth-of-type(n + 2) {
+        display: none;
+      }
+      #js-local-stream {
+        width: 266px;
+        height: 200px;
+        position: absolute;
+        left: 46px;
+        bottom: 0;
+      }
+    }
+  }
+
+  .chat {
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    p {
+      color: gray;
+      text-align: center;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+
+    .messages {
+      width: 100%;
+      background-color: white;
+      height: 88%;
+      margin: 0;
+      color: gray;
+    }
+    .in {
+      text-align: center;
+      border-top: 1px solid rgb(226, 226, 226);
+
+      input {
+        font-size: 12px;
+        height: 30px;
+        width: 198px;
+        border: none;
+      }
+      button {
+        background-color: white;
+        border: 1px solid gray;
+        border-radius: 6px;
+
+        &:hover {
+          background-color: rgb(236, 236, 236);
+        }
+      }
+    }
+  }
+}

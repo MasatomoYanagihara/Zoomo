@@ -1,0 +1,146 @@
+/* normalize */
+body {
+  margin: 0;
+}
+
+input {
+  outline: 0;
+}
+
+button {
+  outline: 0;
+  cursor: pointer;
+}
+
+/* global styles */
+.container {
+  margin: 0 auto;
+  width: 1440px;
+}
+
+video {
+  background-color: black;
+}
+
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: orange;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #eb9800;
+}
+
+.header .heading {
+  height: 32px;
+  font-size: 26px;
+  text-align: left;
+  padding-left: 14px;
+  padding-top: 2px;
+  margin: 0;
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+
+.header .inroom {
+  width: 320px;
+  margin-right: 20px;
+  padding-top: 4px;
+}
+
+.header .inroom input {
+  font-size: 14px;
+  width: 200px;
+  height: 20px;
+  background-color: orange;
+  border: 1px solid white;
+  color: gray;
+}
+
+.header .inroom button {
+  height: 26px;
+  color: gray;
+  font-size: 14px;
+  background-color: orange;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding-top: 2px;
+}
+
+.room .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.room .wrapper .remote-streams {
+  width: 90%;
+  height: 787px;
+  margin: 0;
+  background-color: black;
+  position: relative;
+}
+
+.room .wrapper .remote-streams video {
+  width: 100%;
+  height: 100%;
+}
+
+.room .wrapper .remote-streams video:nth-of-type(n + 2) {
+  display: none;
+}
+
+.room .wrapper .remote-streams #js-local-stream {
+  width: 266px;
+  height: 200px;
+  position: absolute;
+  left: 46px;
+  bottom: 0;
+}
+
+.room .chat {
+  width: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.room .chat p {
+  color: gray;
+  text-align: center;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.room .chat .messages {
+  width: 100%;
+  background-color: white;
+  height: 88%;
+  margin: 0;
+  color: gray;
+}
+
+.room .chat .in {
+  text-align: center;
+  border-top: 1px solid #e2e2e2;
+}
+
+.room .chat .in input {
+  font-size: 12px;
+  height: 30px;
+  width: 198px;
+  border: none;
+}
+
+.room .chat .in button {
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+.room .chat .in button:hover {
+  background-color: #ececec;
+}
+/*# sourceMappingURL=room.css.map */

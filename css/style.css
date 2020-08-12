@@ -1,0 +1,126 @@
+.meta {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #f0e8e8;
+}
+
+.global-wrapper {
+  height: 100vh;
+  background-color: #f0e8e8;
+}
+
+video {
+  background-color: #111;
+}
+
+header {
+  height: 80px;
+  margin-bottom: 80px;
+  background-color: orange;
+  -webkit-box-shadow: 1px 2px 10px gray;
+          box-shadow: 1px 2px 10px gray;
+}
+
+header h1 {
+  color: white;
+  font-size: 3rem;
+  padding-top: 18px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* p2p-media styles */
+.gamen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+  margin-bottom: 40px;
+}
+
+.gamen .stream {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+}
+
+.gamen .stream #js-local-stream {
+  width: 100%;
+}
+
+.gamen .stream #js-remote-stream {
+  width: 100%;
+}
+
+.container2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container2 .moto {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.setumei {
+  width: 580px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.setumei input {
+  height: 34px;
+  width: 380px;
+  font-size: 16px;
+}
+
+.setumei #js-call-trigger {
+  font-size: 20px;
+  width: 80px;
+  height: 40px;
+  color: white;
+  background-color: orange;
+  border-radius: 4px;
+}
+
+.setumei #js-call-trigger:hover {
+  -webkit-box-shadow: 1px 1px 5px gray;
+          box-shadow: 1px 1px 5px gray;
+}
+
+.setumei #js-close-trigger {
+  font-size: 20px;
+  width: 80px;
+  height: 40px;
+  color: orange;
+  background-color: #f0e8e8;
+  border: solid 2px orange;
+  border-radius: 4px;
+}
+
+.setumei #js-close-trigger:hover {
+  -webkit-box-shadow: 1px 1px 5px gray;
+          box-shadow: 1px 1px 5px gray;
+}
+/*# sourceMappingURL=style.css.map */

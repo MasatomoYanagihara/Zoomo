@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZOOMO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/room.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="heading">ZOOMO</h1>
+      <div class="inroom">
+        <input type="text" placeholder=" 接続IDを入力して下さい" id="js-room-id">
+        <button id="js-join-trigger" onclick="this.disabled = true;">接続</button>
+        <button id="js-leave-trigger">終了</button>
+      </div>
+    </div>
+    <div class="room">
+      <div class="wrapper">
+        <div class="remote-streams" id="js-remote-streams">
+          <div>
+            <video id="js-local-stream"></video>
+            <!-- <span id="js-room-mode"></span> -->
+          </div>
+        </div>
+        <!-- チャット -->
+        <div class="chat">
+          <p>チャット</p>
+          <pre class="messages" id="js-messages"></pre>
+          <div class="in">
+            <input type="text" id="js-local-text" size="34" placeholder="ここにメッセージを入力します...">
+            <button id="js-send-trigger">送信</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="meta" id="js-meta"></p>
+  </div>
+  <script src="//cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+  <script src="./script/room.js"></script>
+</body>
+
+</html>
